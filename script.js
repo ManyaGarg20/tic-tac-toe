@@ -1,7 +1,7 @@
 console.log("welcome to the game");
-let audioTurn = new Audio("/audio/turn_sound.wav");
-let gameover= new Audio("/audio/win_sound.wav");
-let music = new Audio("/audio/music.mp3");
+let audioTurn = new Audio("audio/turn_sound.wav");
+let gameover= new Audio("audio/win_sound.wav");
+let music = new Audio("audio/music.mp3");
 let gameEnd=false;
 
 let vol=document.getElementById("vol");
