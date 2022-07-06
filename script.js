@@ -7,6 +7,13 @@ let gameEnd=false;
 let vol=document.getElementById("vol");
 
 
+music.muted=true;
+music.autoplay;
+music.play();
+music.muted =false;
+music.volume=0.4;
+
+
 let turn ="X";
 // function to change turn
 const changeTurn = ()=>{
@@ -40,9 +47,6 @@ document.querySelector(".line").style.transform= `translate(${e[3]}vw,${e[4]}vw)
 } 
 });
 };
-
-music.play();
-music.volume=0.4;
 
 // logics
 let boxes = document.getElementsByClassName("box");
@@ -89,7 +93,6 @@ e.innerText="";
 
 vol.addEventListener("click",()=>{
   if(music.paused){
-    console.log("paused");
     music.play();
     vol.classList.remove('fa-microphone-slash');
     vol.classList.add('fa-music');
